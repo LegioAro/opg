@@ -1,0 +1,147 @@
+.list {
+  padding-top: 100px;
+  padding-bottom: 142px;
+  &__wrapper {
+    position: relative;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(12, auto);
+    grid-column-gap: 88px;
+    grid-auto-flow: column;
+    grid-row-gap: 12px;
+    margin-top: 40px;
+    position: relative;
+    &::before {
+      content: '36 книг';
+      position: absolute;
+      font-size: 261.683px;
+      line-height: 145%;
+      text-transform: uppercase;
+      color: rgba(0, 0, 0, 0.02);
+      bottom: -190px;
+      left: 50%;
+      transform: translateX(-50%);
+      pointer-events: none;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__item {
+    display: flex;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__item-num {
+    font-size: 20px;
+    line-height: 145%;
+    background: linear-gradient(180deg, #388367 0%, #173f31 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-right: 27px;
+  }
+
+  &__item-text {
+    font-family: 'Proxima Nova Light', sans-serif;
+    font-size: 14px;
+    line-height: 145%;
+  }
+
+  &__decor {
+    position: absolute;
+
+    &-1 {
+      width: 207px;
+      top: -118px;
+      left: -180px;
+    }
+
+    &-2 {
+      width: 208px;
+      right: -145px;
+      top: -120px;
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  .list {
+    &__decor {
+      &-1 {
+        width: 150px;
+        top: -50px;
+        left: 0px;
+      }
+      &-2 {
+        width: 150px;
+        right: 0px;
+        top: -50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1120px) {
+  .list {
+    &__items {
+      &::before {
+        font-size: 180px;
+        bottom: -100px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .list {
+    &__items {
+      grid-column-gap: 30px;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .list {
+    padding-top: 70px;
+    &__decor {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .list {
+    padding-bottom: 70px;
+
+    &__items {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(18, auto);
+      &::before {
+        font-size: 120px;
+        bottom: -70px;
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .list {
+    &__items {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: auto;
+      grid-auto-flow: row;
+      max-width: 500px;
+      margin: 40px auto 0;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+}

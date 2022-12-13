@@ -25,7 +25,7 @@
     background-color: #ffffff;
     box-shadow: 0px 10px 100px rgba(0, 0, 0, 0.03);
     border-radius: 10px;
-    padding: 60px 20px 30px;
+    padding: 46px 20px 30px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -36,34 +36,26 @@
   }
 
   &__item-img {
-    width: 144px;
-    height: 203px;
+    width: 296px;
     display: flex;
-    box-shadow: 4px -3px 0px 0px #686969;
     margin: 0 auto;
   }
 
   &__item-title {
-    background-image: linear-gradient(180deg, #388367 0%, #173f31 100%);
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
     font-size: 23px;
     line-height: 143%;
     text-align: center;
     text-transform: uppercase;
-    color: #ffffff;
-    padding: 8px;
-    margin: 0 auto -20px;
     position: relative;
     z-index: 1;
-    width: calc(100% - 60px);
+    margin-bottom: 23px;
   }
 
   &__item-text {
     font-family: 'Proxima Nova Light', sans-serif;
     font-size: 16px;
     line-height: 145%;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
     p {
       margin-bottom: 12px;
       &:last-child {
@@ -85,20 +77,28 @@
   }
 
   &__item-price {
+    font-family: 'Proxima Nova Regular', sans-serif;
     font-size: 20px;
     line-height: 145%;
     text-align: center;
     text-decoration-line: line-through;
     text-transform: uppercase;
+    margin-bottom: 5px;
   }
 
   &__item-btn {
-    font-size: 30px;
-    line-height: 145%;
+    background-color: #c70000;
+    box-shadow: 0px 8.09278px 15px rgba(0, 0, 0, 0.1),
+      inset 0px 0.809278px 0px rgba(255, 255, 255, 0.4);
+    border-radius: 8.09278px;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'Proxima Nova Bold', sans-serif;
+    font-size: 18.6134px;
+    line-height: 23px;
     text-align: center;
     text-transform: uppercase;
-    color: #c70000;
-    cursor: pointer;
+    padding: 19px 10px;
   }
 
   &__decor {

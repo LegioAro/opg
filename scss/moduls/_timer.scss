@@ -82,7 +82,7 @@
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 620px) {
   .timer {
     &__number {
       font-size: 40px;
@@ -95,11 +95,19 @@
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 480px) {
   .timer {
+    &__number {
+      font-size: 20px;
+      width: 25px;
+      height: 40px;
+    }
+    &__separator {
+      font-size: 20px;
+    }
     &__separator,
     &__item {
-      margin-right: 8px;
+      margin-right: 6px;
     }
   }
 }

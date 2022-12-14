@@ -34,6 +34,8 @@
     height: 115px;
     display: flex;
     margin-bottom: -16px;
+    position: relative;
+    z-index: 2;
     img {
       object-fit: contain;
     }
@@ -71,7 +73,7 @@
 
   &__item-list-item {
     font-family: 'Proxima Nova Regular', sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 145%;
     margin-bottom: 15px;
     &:last-child {
@@ -122,6 +124,14 @@
   }
 }
 
+@media (max-width: 1050px) {
+  .packages {
+    &__item-price-title {
+      font-size: 30px;
+    }
+  }
+}
+
 @media (max-width: 1000px) {
   .packages {
     &__items {
@@ -146,6 +156,9 @@
     }
     &__item-list {
       padding: 0 17px;
+    }
+    &__item-price-title {
+      font-size: 34px;
     }
   }
 }

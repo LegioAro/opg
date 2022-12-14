@@ -104,6 +104,22 @@
     text-transform: uppercase;
     cursor: pointer;
   }
+
+  &__item-price {
+    text-align: center;
+  }
+
+  &__item-price-subtitle {
+    font-family: 'Proxima Nova Regular', sans-serif;
+    font-size: 20px;
+    text-decoration-line: line-through;
+    opacity: 0.3;
+  }
+
+  &__item-price-title {
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 1000px) {
